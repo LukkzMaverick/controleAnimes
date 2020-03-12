@@ -13,20 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/animes', function(){
-    $animes = [
-        'One piece',
-        'Boku no Hero',
-        'Code Geass'
-    ];
-    $html = "<ul>";
-    foreach($animes as $anime){
-        $html .= "<li>$anime</li>";
-    }
-    $html.= "</ul>";
-    echo $html;
-});
+Route::get('/animes', 'AnimesController@index');
