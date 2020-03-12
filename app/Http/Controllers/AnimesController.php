@@ -12,11 +12,6 @@ class AnimesController extends Controller
             'Boku no Hero',
             'Code Geass'
         ];
-        $html = "<ul>";
-        foreach($animes as $anime){
-            $html .= "<li>$anime</li>";
-        }
-        $html.= "</ul>";
-        return $html;
+        return view('animes/index', compact('animes') );
     }
 }
