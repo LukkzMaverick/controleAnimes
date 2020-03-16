@@ -12,6 +12,11 @@ class AnimesController extends Controller
             'Boku no Hero',
             'Code Geass'
         ];
-        return view('animes/index', compact('animes') );
+        return view('animes.index', compact('animes') );
+    }
+
+    public function create()
+    {
+        return view('animes.create');
     }
 }

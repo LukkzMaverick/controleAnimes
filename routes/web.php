@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/animes', 'AnimesController@index');
+Route::get('/animes/criar', 'AnimesController@create');
