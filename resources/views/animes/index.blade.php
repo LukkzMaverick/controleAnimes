@@ -6,7 +6,7 @@
     <a href="/animes/criar" class="mb-2 btn btn-dark">Adicionar</a>
     <ul class="list-group">
         @foreach($animes as $anime)
-            <li class="list-group-item"><?= $anime; ?></li>
+            <li class="list-group-item">{{$anime->nome}}</li>
         @endforeach
     </ul>
 @endsection
