@@ -14,7 +14,7 @@ class CriarTabelaAnimes extends Migration
     public function up()
     {
         Schema::create("animes", function (Blueprint $table){
-            $table->id();
+            $table->increments('id');
             $table->string('nome');
         });
     }

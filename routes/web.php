@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/animes', 'AnimesController@index');
-Route::get('/animes/criar', 'AnimesController@create');
-Route::post('/animes/criar', 'AnimesController@store');
+Route::get('/animes', 'AnimesController@index')->name('listarSeries');
+Route::get('/animes/criar', 'AnimesController@create')->name('criarAnime');
+Route::post('/animes/criar', 'AnimesController@store')->name('')->name('persistirAnime');
+Route::delete('/animes/{id}','AnimesController@destroy')->name('deletarAnime');
+
