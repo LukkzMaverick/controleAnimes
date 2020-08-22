@@ -11,3 +11,5 @@ Um site construído utilizando Laravel + Bootstrap onde é possível adicionar e
     php artisan migrate 
     
 Pronto agora é só iniciar o servidor.
+
+    php artisan serve 
